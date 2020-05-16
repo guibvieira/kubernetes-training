@@ -9,10 +9,11 @@ spec:
             component: web
     template:
         metadata:
-            labels: web
+            labels:
+                component: web
         spec:
             containers:
                 - name: client
-                    image: stephengrider/multi-client
-                    ports:
-                        - containerPort: 3000
+                  image: stephengrider/multi-client
+                  ports:
+                    - containerPort: 3000
